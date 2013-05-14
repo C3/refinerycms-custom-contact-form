@@ -1,0 +1,29 @@
+nl:
+  refinery:
+    plugins:
+      contact_form_fields:
+        title: Contact Form Fields
+    contact_form_fields:
+      admin:
+        contact_form_fields:
+          actions:
+            create_new: Maak een nieuwe Contact Form Field
+            reorder: Wijzig de volgorde van de Contact Form Fields
+            reorder_done: Klaar met het wijzingen van de volgorde van de Contact Form Fields
+          records:
+            title: Contact Form Fields
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Contact Form Fields. Druk op 'Maak een nieuwe Contact Form Field' om de eerste aan te maken.
+          contact_form_field:
+            view_live_html: Bekijk deze contact form field op de website <br/><em>(opent een nieuw venster)</em>
+            edit: Bewerk deze contact form field
+            delete: Verwijder deze contact form field voor eeuwig
+      contact_form_fields:
+        show:
+          other: Andere Contact Form Fields
+  activerecord:
+    attributes:
+      'refinery/contact_form_fields/contact_form_field':
+        field_name: Field Name
+        required: Required
+        field_type: Field Type

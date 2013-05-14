@@ -1,0 +1,25 @@
+<%= overview %>
+<h1><%= @page.title %></h1>
+  <%= form_tag('/contact-us/send', {:class => 'formtastic', :id => 'contact-form'}) %>
+    <fieldset class="inputs">
+      <ol>
+        <% @contact_form_fields.each do |field| %>
+          <li class="input">
+            <label for="<%= field.dom_id %>" class="label"><%= field.field_name %><%= " *" if field.required? %></label>
+            <%= field_input_tag(field) %>
+          </li>
+        <% end %>
+      </ol>
+    </fieldset>
+    <fieldset class="actions">
+      <ol>
+        <li class="action input_action">
+          <input type="submit" value="Send" name="submit">
+        </li>
+      </ol>
+    </fieldset>
+  </form>
+<%= @page.content_for(:body).html_safe %>
+
+<% content_for :javascripts do %>
+<% end %>

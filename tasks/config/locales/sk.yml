@@ -1,0 +1,29 @@
+sk:
+  refinery:
+    plugins:
+      contact_form_fields:
+        title: Contact Form Fields
+    contact_form_fields:
+      admin:
+        contact_form_fields:
+          actions:
+            create_new: Pridať Contact Form Field
+            reorder: Preusporiadať Contact Form Fields
+            reorder_done: Koniec radenia Contact Form Fields
+          records:
+            title: Contact Form Fields
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Contact Form Fields. Kliknite na "Pridať Contact Form Field" pre pridanie prvého contact form field.
+          contact_form_field:
+            view_live_html: Zobraziť náhľad contact form field<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť contact form field
+            delete: Zmazať contact form field
+      contact_form_fields:
+        show:
+          other: Daľšie Contact Form Fields
+  activerecord:
+    attributes:
+      'refinery/contact_form_fields/contact_form_field':
+        field_name: Field Name
+        required: Required
+        field_type: Field Type

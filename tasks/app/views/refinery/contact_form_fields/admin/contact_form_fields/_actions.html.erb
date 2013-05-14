@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::ContactFormFields::Admin::ContactFormFieldsController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.contact_form_fields_admin_contact_form_fields_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_contact_form_fields_admin_contact_form_field_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::ContactFormFields::Admin::ContactFormFieldsController.sortable? && ::Refinery::ContactFormFields::ContactFormField.any? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Contact Form Fields"),
+                 refinery.contact_form_fields_admin_contact_form_fields_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Contact Form Fields"),
+                 refinery.contact_form_fields_admin_contact_form_fields_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

@@ -1,0 +1,29 @@
+fr:
+  refinery:
+    plugins:
+      contact_form_fields:
+        title: Contact Form Fields
+    contact_form_fields:
+      admin:
+        contact_form_fields:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Contact Form Field
+            reorder: Réordonner les Contact Form Fields
+            reorder_done: Fin de réordonnancement des Contact Form Fields
+          records:
+            title: Contact Form Fields
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Contact Form Field. Cliquer sur "Créer un(e) nouve(au/l/lle) Contact Form Field" pour créer votre premi(er/ère) contact form field.'
+          contact_form_field:
+            view_live_html: Voir ce(t/tte) contact form field <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) contact form field
+            delete: Supprimer définitivement ce(t/tte) contact form field
+      contact_form_fields:
+        show:
+          other: Autres Contact Form Fields
+  activerecord:
+    attributes:
+      'refinery/contact_form_fields/contact_form_field':
+        field_name: Field Name
+        required: Required
+        field_type: Field Type

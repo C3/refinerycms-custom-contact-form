@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h1>An inquiry has been submitted via the C3 Business Solutions website</h1>
+    <h3>The following details have been submitted:</h3>
+    <% @inquiry_details.each do |field, value| %>
+      <p><%= field %>:
+         <br />
+         <%= value %>
+      </p>
+    <% end %>
+  </body>
+</html>

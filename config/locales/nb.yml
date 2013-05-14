@@ -1,0 +1,29 @@
+nb:
+  refinery:
+    plugins:
+      contact_form_fields:
+        title: Contact Form Fields
+    contact_form_fields:
+      admin:
+        contact_form_fields:
+          actions:
+            create_new: Lag en ny Contact Form Field
+            reorder: Endre rekkefølgen på Contact Form Fields
+            reorder_done: Ferdig å endre rekkefølgen Contact Form Fields
+          records:
+            title: Contact Form Fields
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Contact Form Fields enda. Klikk på "Lag en ny Contact Form Field" for å legge til din første contact form field.
+          contact_form_field:
+            view_live_html: Vis hvordan denne contact form field ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne contact form field
+            delete: Fjern denne contact form field permanent
+      contact_form_fields:
+        show:
+          other: Andre Contact Form Fields
+  activerecord:
+    attributes:
+      'refinery/contact_form_fields/contact_form_field':
+        field_name: Field Name
+        required: Required
+        field_type: Field Type
