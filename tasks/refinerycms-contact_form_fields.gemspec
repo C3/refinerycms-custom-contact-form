@@ -13,9 +13,9 @@ Gem::Specification.new do |s|
   s.license           = %q{MIT}
 
   # Runtime dependencies
-  s.add_dependency             'refinerycms-core',    '~> 2.0.8'
-  s.add_dependency             'refinerycms-settings', '~> 2.0.1'
+  s.add_dependency             'refinerycms-core',    '~> 2.1.0'
+  s.add_dependency             'refinerycms-settings', '~> 2.1.0'
 
   # Development dependencies (usually used for testing)
-  s.add_development_dependency 'refinerycms-testing', '~> 2.0.8'
+  s.add_development_dependency 'refinerycms-testing', '~> 2.1.0'
 end

@@ -2,9 +2,6 @@ source "http://rubygems.org"
 
 gemspec
 
-gem 'refinerycms', '~> 2.0.3'
-gem 'refinerycms-settings', '~> 2.0.1'
-
 # Database Configuration
 platforms :jruby do
   gem 'activerecord-jdbcsqlite3-adapter'
@@ -20,7 +17,6 @@ platforms :ruby do
 end
 
 group :development, :test do
-  gem 'refinerycms-testing', '~> 2.0.3'
   gem 'guard-rspec', '~> 0.7.0'
 
   platforms :mswin, :mingw do
@@ -69,4 +65,4 @@ group :assets do
   gem 'uglifier'
 end
 
-gem 'jquery-rails', '~> 2.0.0'
+gem 'jquery-rails', '~> 2.3.0'
